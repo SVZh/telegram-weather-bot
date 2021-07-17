@@ -1,0 +1,23 @@
+# telegram settings
+
+botUserName= #your telegram bot user name
+token= #your telegram bot token
+
+# open weather map settings
+
+owmtoken= #your open weathermap token
+
+# various DB settings
+
+spring.datasource.url=jdbc:h2:file:./subscribers
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=password
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+spring.h2.console.enabled=true
+spring.h2.console.path=/h2-console
+spring.h2.console.settings.trace=false
+spring.h2.console.settings.web-allow-others=false
+spring.jpa.generate-ddl=true
+spring.jpa.hibernate.ddl-auto=update
+server.port=8081
