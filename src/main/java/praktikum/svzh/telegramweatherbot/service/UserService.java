@@ -42,11 +42,11 @@ public class UserService {
     public void updateLocation(User user, Location location) {
         user.setLat(Optional.ofNullable(location)
                 .map(Location::getLatitude)
-                .orElse(null)
+                .orElse(0D)
         );
         user.setLon(Optional.ofNullable(location)
                 .map(Location::getLongitude)
-                .orElse(null)
+                .orElse(0D)
         );
         save(user);
     }
