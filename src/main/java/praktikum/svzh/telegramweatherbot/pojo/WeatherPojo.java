@@ -5,6 +5,8 @@ package praktikum.svzh.telegramweatherbot.pojo;
 /* ObjectMapper om = new ObjectMapper();
 WeatherPojo weatherPojo = om.readValue(myJsonString), WeatherPojo.class); */
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import java.util.List;
 
 public class WeatherPojo{
@@ -21,6 +23,8 @@ public class WeatherPojo{
     public int id;
     public String name;
     public int cod;
+    @JsonIgnore
+    public Object rain;
 }
 
 
